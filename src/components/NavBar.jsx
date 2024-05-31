@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import styled, { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
 import ThemeToggler from './ThemeToggler';
+import '../css/education.css';
 
 const styles = {
   logoStyle: {
@@ -64,7 +65,7 @@ const NavBar = () => {
           <Navbar.Brand href="/">
             <img
               src={data?.logo?.source}
-              className="d-inline-block align-top"
+              className="d-inline-block align-top img-border"
               alt="main logo"
               style={
                 data?.logo?.height && data?.logo?.width
